@@ -1,0 +1,24 @@
+name: GodTrident
+version: '1.0.0'
+main: com.godtrident.GodTridentPlugin
+api-version: '1.21'
+author: Claude
+description: >
+  Adds a custom "God Trident" weapon. Shift + Right Click launches the holder
+  10-15 blocks into the air with no fall damage; on landing, every player
+  within 30 blocks takes a shockwave hit that pops their Totem of Undying.
+
+commands:
+  godtrident:
+    description: Give the God Trident to yourself or another player.
+    usage: "/godtrident give [player]"
+    permission: godtrident.give
+    aliases: [gtrident, gt]
+
+permissions:
+  godtrident.give:
+    description: Allows giving the God Trident item.
+    default: op
+  godtrident.use:
+    description: Allows using the God Trident's ability (holding it is enough by default).
+    default: true
