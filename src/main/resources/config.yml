@@ -1,0 +1,53 @@
+debug: false   # true karne se console me har crossbow/trident use ka detailed log aayega
+
+trident:
+  name: "&b&lGOD TRIDENT"
+  lore:
+    - "&7Shift + Right Click &8» &bSky Launch"
+    - "&7Landing par &c30 block &7radius ke"
+    - "&7saare players ka &6Totem Pop&7!"
+    - ""
+    - "&8» &fNo fall damage"
+  min-height: 10.0
+  max-height: 15.0
+  radius: 30.0
+  cooldown-seconds: 10
+  affect-self: false
+  kill-if-no-totem: false      # true = totem na hone par player mar jayega
+  health-if-no-totem: 2.0      # 2.0 = 1 heart
+  max-air-ticks: 300
+
+crossbow:
+  name: "&e&lTHUNDER CROSSBOW"
+  lore:
+    - "&7Arrow fire karo &8» &eMulti Homing Arrows"
+    - "&730 block radius ke saare players par"
+    - "&7&lTHUNDER STRIKE &7+ 1 heart + effects"
+  radius: 30.0
+  affect-self: false           # true = solo testing ke liye khud bhi target ban jaoge
+  cooldown-seconds: 12
+  split-delay-ticks: 6
+  arrow-speed: 1.8
+  homing-lifetime-ticks: 120
+  remove-original-arrow: true
+  pass-through-blocks: true
+  real-lightning: false        # true = asli lightning (damage + aag)
+  health-left: 2.0             # 1 heart
+  effect-seconds: 15
+  slowness-amplifier: 2        # 0 = Slowness I, 2 = Slowness III
+
+messages:
+  prefix: "&8[&b&lGodItems&8] &r"
+  no-permission: "&cIske liye tumhare paas permission nahi hai!"
+  cooldown: "&cWait karo &e%time%s &caur!"
+  trident-launched: "&bGOD TRIDENT &7activated! &fAsmaan me chalo..."
+  trident-slam: "&bSLAM! &7Tumne &e%count% &7players ko hit kiya!"
+  trident-hit: "&c%player% &7ke GOD TRIDENT ne tumhe hit kiya!"
+  crossbow-fired: "&eTHUNDER VOLLEY! &7%count% &7arrows lock ho gaye!"
+  crossbow-no-target: "&7Radius me koi target nahi mila."
+  crossbow-hit: "&e&lTHUNDER STRIKE! &7by &c%player%"
+  item-given: "&aItem &e%player% &ako de diya gaya!"
+  item-received: "&aTumhe ek God Item mila hai!"
+  player-not-found: "&cPlayer online nahi hai!"
+  console-need-player: "&cConsole se player ka naam dena zaroori hai."
+  reloaded: "&aConfig reload ho gayi!"
